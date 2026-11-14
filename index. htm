@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON-X // Cybernetic Augmentation Interface</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link href="https://googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Cyber Grid & Scanline Overlay -->
+  <div class="cyber-grid"></div>
+  <div class="scanlines"></div>
+
+  <!-- Navigation HUD -->
+  <header class="navbar">
+    <div class="logo">NEON<span>-X</span> <small>v4.09</small></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#systems">Augmentations</a>
+      <a href="#telemetry">Telemetry</a>
+      <a href="#terminal">Neural Link</a>
+    </nav>
+    <button class="btn-outline" id="navCta">SYNC CORE</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hud-badge">● SYSTEM ONLINE // BIO-SYNTHESIS READY</div>
+      <h1 class="glitch" data-text="EVOLVE BEYOND BIOLOGY">EVOLVE BEYOND BIOLOGY</h1>
+      <p>Next-generation neural implants, ocular HUD optics, and titanium exoskeletal enhancements engineered for peak human-machine convergence.</p>
+      <div class="hero-actions">
+        <a href="#terminal" class="btn-primary">INITIALIZE LINK</a>
+        <a href="#systems" class="btn-secondary">EXPLORE MODULES</a>
+      </div>
+    </div>
+
+    <!-- Animated Cybernetic Core Visual -->
+    <div class="hero-visual">
+      <div class="cyber-core">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="core-center">
+          <span>99.8%</span>
+          <small>SYNAPSE SYNC</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Telemetry Stats Bar -->
+  <section class="stats-bar" id="telemetry">
+    <div class="stat-item">
+      <h2 class="counter" data-target="0.04">0.04ms</h2>
+      <p>NEURAL LATENCY</p>
+    </div>
+    <div class="stat-item">
+      <h2>400%</h2>
+      <p>OPTICAL ZOOM RANGE</p>
+    </div>
+    <div class="stat-item">
+      <h2>120 HRS</h2>
+      <p>QUANTUM CELL RESERVE</p>
+    </div>
+    <div class="stat-item">
+      <h2>AES-512</h2>
+      <p>CORTEX FIREWALL</p>
+    </div>
+  </section>
+
+  <!-- Augmentation Modules (Glassmorphism Cards) -->
+  <section class="systems" id="systems">
+    <div class="section-header">
+      <span class="sub-tag">// HARDWARE ARCHITECTURE</span>
+      <h2>CYBERNETIC MODULES</h2>
+    </div>
+    <div class="cards-grid">
+      <article class="cyber-card">
+        <div class="card-corner">01</div>
+        <h3>OCULAR HUD MK-IV</h3>
+        <p>Real-time thermal imaging, biometric threat scanning, and zero-lag augmented reality overlay directly on the optic nerve.</p>
+        <span class="status-tag">COMPATIBILITY: 99.4%</span>
+      </article>
+      <article class="cyber-card">
+        <div class="card-corner">02</div>
+        <h3>SYNAPSE CO-PROCESSOR</h3>
+        <p>Sub-dermal quantum bridge accelerating memory recall, motor reflex speed, and direct machine-to-brain data streaming.</p>
+        <span class="status-tag">COMPATIBILITY: 97.9%</span>
+      </article>
+      <article class="cyber-card">
+        <div class="card-corner">03</div>
+        <h3>CARBON-TITANIUM LIMBS</h3>
+        <p>Actuated myofiber musculature delivering 4x kinetic output with micro-gyroscopic stabilization and tactile feedback.</p>
+        <span class="status-tag">COMPATIBILITY: 98.7%</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Interactive Neural Link Simulator -->
+  <section class="terminal-section" id="terminal">
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">NEON-X // CORTEX DIAGNOSTIC CONSOLE</span>
+      </div>
+      <div class="terminal-body" id="terminalOutput">
+        <p>> [BOOT] Cybernetic Kernel v4.09 loaded...</p>
+        <p>> [SCAN] Awaiting host biometric handshake...</p>
+      </div>
+      <div class="terminal-controls">
+        <button class="btn-primary" id="connectBtn">EXECUTE NEURAL HANDSHAKE</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>NEON-X CYBERNETICS CORP // ALL RIGHTS RESERVED 2099</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
